@@ -1,124 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Activity Day 5</title>
-    
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <title>KARL PAOLO SAEZ</title>
+   <style type="text/css">
+    body {
+      background:#bdbdbd
+    }
+  </style>
 </head>
 <body><center>
+
+    <h1>MODALS AND PARALLAX</h1>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"><i class="material-icons">android</i>Facebook</a>
+        
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html"><i class="material-icons">archive</i></a></li>
+            <li><a href="badges.html"><i class="material-icons">arrow_back</i></a></li>
+            <li><a href="collapsible.html"><i class="material-icons">clear</i></a></li>
+            <li><a href="mobile.html"><i class="material-icons">camera</i></a></li>
+          </ul>
+        </div>
+      </nav>
+
+<a class="container">
+    <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to cart</a>
+ 
+    <!-- Modal Structure -->
     
-    <h1>Activity (PAGINATION AND PRELOADER) SAEZ, KARL PAOLO</h1>
-    
-    <h1>Pagination</h1>
-    <ul class="pagination">
-        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-        <li class="active"><a href="#!">1</a></li>
-        <li class="active"><a href="#!">2</a></li>
-        <li class="active"><a href="#!">3</a></li>
-        <li class="active"><a href="#!">4</a></li>
-        <li class="active"><a href="#!">5</a></li>
-        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-     </ul>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>And this is how it works.</h4>
+          <p>DROP SOME </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+  
 
 
-     <h1>Preloader</h1>
-     <h3>Linear</h3>
-     <h5>Determinate</h5>
-    <div class="progress">
-        <div class="determinate" style="width: 90%"></div>
-    </div>
+        <!-- Jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.modal').modal();
+          });
+        </script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+        </script>
         
-    <h5>Indeterminate</h5>
-    <div class="progress">
-        <div class="indeterminate"></div>
-    </div>
-        
-    <h3>Circular</h3>
-    <h5>Colors</h5>
-    <div class="preloader-wrapper big active">
-        <div class="spinner-layer spinner-red-only">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div><div class="gap-patch">
-            <div class="circle"></div>
-          </div><div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="preloader-wrapper active">
-        <div class="spinner-layer spinner-orange-only">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div><div class="gap-patch">
-            <div class="circle"></div>
-          </div><div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="preloader-wrapper small active">
-        <div class="spinner-layer spinner-violet-only">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div><div class="gap-patch">
-            <div class="circle"></div>
-          </div><div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-        
-      <h3>Circular Flashing Colors</h3>
-      <div class="preloader-wrapper big active">
-        <div class="spinner-layer spinner-blue">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div><div class="gap-patch">
-            <div class="circle"></div>
-          </div><div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-  
-        <div class="spinner-layer spinner-blue">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div><div class="gap-patch">
-            <div class="circle"></div>
-          </div><div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-  
-        <div class="spinner-layer spinner-red">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div><div class="gap-patch">
-            <div class="circle"></div>
-          </div><div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-  
-        <div class="spinner-layer spinner-green">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div><div class="gap-patch">
-            <div class="circle"></div>
-          </div><div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-          
-    
-    
-        </center></body>
+
+</center></body>
 </html>
